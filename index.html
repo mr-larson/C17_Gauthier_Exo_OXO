@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>  
+<html lang="fr">
+
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title> OXO </title>
-
-        <!-- Lien Bootstrap -->
-        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-        <!--lien Fontawesome-->
-        <link rel="stylesheet" href="./node_modules/@fontawesome/fontawesome-free" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <!--Lien CSS-->                                          
-        <link rel="stylesheet" href="./public/css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exo_OXO_JS</title>
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+        <link rel="stylesheet" href="public/css/style.css">
     </head>
-    <body>  
-       
 
-        <!--Script JS & Jquery-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <!--lien JS-->
+    <body>
+        <!-- Title -->
+        <section id="Title" class="Title">
+            <h1>OXO</h1>
+        </section>
+        <!-- Game -->
+        <section id="Game" class="Game">
+            <div class="setup">
+                <div class="chooseplayertype">
+                    <h2>Player 1 (X):</h2>
+                    <div class="selecttype">
+                        <div class="selection human one">Human</div>
+                        <div class="selection ai one">AI</div>
+                    </div>
+                </div>
+                <div class="chooseplayertype">
+                    <h2>Player 2 (O):</h2>
+                    <div class="selecttype">
+                        <div class="selection human two">Human</div>
+                        <div class="selection ai two">AI</div>
+                    </div>
+                </div>
+                <div class="startbuttondiv">
+                    <button class="startgame">Start Game</button>
+                </div>
+            </div>
+            <div class="turn"></div>
+            <div class="winner"></div>
+            <div class="gameboard"></div>
+        </section>
         <script type="text/javascript" src="./public/javascript/main.js"></script>
     </body>
 </html>
